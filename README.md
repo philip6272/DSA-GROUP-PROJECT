@@ -1,38 +1,59 @@
-# DSA521S Group Project 2026
+# DSA521S Group Mini-Project 2026 — NUST Campus Service Centre Simulation
 
-**Group Number:** [XX]  
-**GitHub Repository:** https://github.com/philip6272/DSA-GROUP-PROJECT
+A menu-driven Java simulation of the NUST Campus Service Centre, demonstrating the selection, implementation, and analysis of fundamental data structures and sorting algorithms.
 
-## Group Members
+---
 
-| Student Number | Name |
-|---|---|
-| [Student Number] | [Full Name] |
-| [Student Number] | [Full Name] |
-| [Student Number] | [Full Name] |
+## Table of Contents
 
-## Submitted by
+- Project Overview
+- Group Information
+- Project Structure
+- How to Run
+- Features by Part
+- Sorting Experiment Results
+- Technologies Used
+- Academic Integrity
+- GitHub Repository
 
-Submitted by: [Student Number] – [Name]
+---
 
-## Project Description
+## Project Overview
 
-This repository contains the Java implementations, report, screenshots, and supporting files for the DSA521S Group Project 2026.
+The NUST Campus Service Centre Simulation models common student-service activities using fundamental data structures and sorting algorithms. The project shows how different data structures are selected according to the behaviour required by each task.
 
-It includes:
+Key learning outcomes demonstrated:
 
-- Part A: Queue, Linked List, Postfix Stack, Array Statistics, Justification
-- Part B: Selection, Insertion, Merge and Quick Sort traces
-- Part C: Sorting experiment
-- Part D: Integrated system
-- Part E: Pseudocode
-- Part F: Project report
-                                                                                                                                                                                                                                                      
-## How to Compile and Run
+- Selection and justification of appropriate data structures
+- Implementation of arrays, linked lists, stacks, and queues from scratch (no built-in Java collections)
+- Algorithm design for insertion, deletion, searching, and traversal
+- Implementation and tracing of four sorting algorithms
+- Experimental comparison of algorithm performance
+- Translation of pseudocode into working Java programs
 
-### Part A1 – Queue
+---
 
-```bash
-cd src/PartA_Queue
-javac Mainc.java
-java Mainc
+## Group Information
+
+| Field | Details |
+|-------|---------|
+| Group Number | Group 10 |
+| Module | DSA521S — Data Structures and Algorithms 1 |
+| Lecturer | Mr. Steven |
+| Submission Date | 29 September 2026 |
+
+### Group Members
+
+| No. | Full Name | Student Number | GitHub Username |
+|-----|-----------|----------------|-----------------|
+| 1 | Filipus Ithindi | 226032582 | philip6272 |
+| 2 | Jeremia Kambonde | 225149540 | 225149540-kambonde |
+| 3 | Shilongo | 225020238 | 225020238-shilongo |
+| 4 | Elifas | 225163993 | 225163993 |
+| 5 | Jafet Nashipili | 226081745 | 226081745-Nashipili |
+
+**Submitted by:** 226032582 – Filipus Ithindi
+
+---
+
+## Project Structure

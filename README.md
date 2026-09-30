@@ -1,4 +1,4 @@
-# DSA521S Group Mini-Project 2026
+# DSA521S Group Project 2026
 
 **Group Number:** [XX]  
 **GitHub Repository:** https://github.com/philip6272/DSA-GROUP-PROJECT

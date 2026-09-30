@@ -1,42 +1,35 @@
-public class MergeSort {
+public class QuickSort {
 
     public static SortResult sort(int[] input) {
         int[] a = input.clone();
-        long[] counters = new long[1]; // [0] = comparisons
+        long[] counters = new long[1];
 
         long start = System.nanoTime();
-        mergeSort(a, 0, a.length - 1, counters);
+        quickSort(a, 0, a.length - 1, counters);
         long end = System.nanoTime();
 
         return new SortResult(a, counters[0], 0, end - start);
     }
 
-    private static void mergeSort(int[] a, int low, int high, long[] counters) {
+    private static void quickSort(int[] a, int low, int high, long[] counters) {
         if (low < high) {
-            int mid = (low + high) / 2;
-            mergeSort(a, low, mid, counters);
-            mergeSort(a, mid + 1, high, counters);
-            merge(a, low, mid, high, counters);
+            int p = partition(a, low, high, counters);
+            quickSort(a, low, p - 1, counters);
+            quickSort(a, p + 1, high, counters);
         }
     }
 
-    private static void merge(int[] a, int low, int mid, int high, long[] counters) {
-        int[] left = new int[mid - low + 1];
-        int[] right = new int[high - mid];
-
-        for (int i = 0; i < left.length; i++) left[i] = a[low + i];
-        for (int i = 0; i < right.length; i++) right[i] = a[mid + 1 + i];
-
-        int i = 0, j = 0, k = low;
-        while (i < left.length && j < right.length) {
+    private static int partition(int[] a, int low, int high, long[] counters) {
+        int pivot = a[high];
+        int i = low - 1;
+        for (int j = low; j < high; j++) {
             counters[0]++;
-            if (left[i] <= right[j]) {
-                a[k++] = left[i++];
-            } else {
-                a[k++] = right[j++];
+            if (a[j] <= pivot) {
+                i++;
+                int temp = a[i]; a[i] = a[j]; a[j] = temp;
             }
         }
-        while (i < left.length) a[k++] = left[i++];
-        while (j < right.length) a[k++] = right[j++];
+        int temp = a[i + 1]; a[i + 1] = a[high]; a[high] = temp;
+        return i + 1;
     }
 }
